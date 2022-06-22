@@ -1,0 +1,293 @@
+<!DOCTYPE html><html><head>
+      <title>README</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/ferrywu/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.6.3/node_modules/@shd101wyy/mume/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="mume-header" id="%E5%81%87%E5%A6%82%E6%88%91%E6%98%AF%E4%B8%80%E6%9C%B5%E6%A8%B1%E8%8A%B1">&#x5047;&#x5982;&#x6211;&#x662F;&#x4E00;&#x6735;&#x6A31;&#x82B1;</h1>
+
+<hr>
+<p>&#x5047;&#x5982;&#x6211;&#x662F;&#x4E00;&#x6735;&#x6A31;&#x82B1;&#xFF0C;&#x6211;&#x613F;&#x751F;&#x957F;&#x5728;&#x4E9A;&#x6D32;&#x7684;&#x4E1C;&#x90E8;&#x3001;&#x795E;&#x5DDE;&#x5DE8;&#x9F99;&#x4E2D;&#x4E00;&#x4E2A;&#x53EB;&#x4F5C;&#x6C5F;&#x57CE;&#x7684;&#x5730;&#x65B9;&#x3002;&#x96C4;&#x4F1F;&#x7684;&#x957F;&#x6C5F;&#x4ECE;&#x8FD9;&#x91CC;&#x5954;&#x817E;&#x6D41;&#x8FC7;&#xFF0C;&#x9EC4;&#x9E64;&#x697C;&#x5934;&#x6709;&#x4E00;&#x4F4D;&#x5E74;&#x8F7B;&#x7684;&#x8BD7;&#x4EBA;&#xFF0C;&#x6325;&#x6BEB;&#x5199;&#x4E0B;&#x201C;&#x5B64;&#x5E06;&#x8FDC;&#x5F71;&#x78A7;&#x7A7A;&#x5C3D;&#xFF0C;&#x60DF;&#x89C1;&#x957F;&#x6C5F;&#x5929;&#x9645;&#x6D41;&#x201D;&#x7684;&#x5343;&#x53E4;&#x7EDD;&#x5531;&#x3002;&#x6211;&#x613F;&#x751F;&#x957F;&#x5728;&#x8FD9;&#x91CC;&#xFF0C;&#x7EFD;&#x653E;&#x81EA;&#x5DF1;&#x7684;&#x7F8E;&#x4E3D;&#xFF0C;&#x6B23;&#x8D4F;&#x4EBA;&#x95F4;&#x7684;&#x7F8E;&#x597D;&#x3002;<br>
+&#x6211;&#x6765;&#x5230;&#x8FD9;&#x5EA7;&#x7F8E;&#x4E3D;&#x7684;&#x57CE;&#x5E02;&#xFF0C;&#x9759;&#x9759;&#x5730;&#x8EBA;&#x5728;&#x6BCD;&#x4EB2;&#x7684;&#x6000;&#x91CC;&#x3002;&#x4F46;&#x6211;&#x53D1;&#x73B0;&#x8857;&#x4E0A;&#x7684;&#x4EBA;&#x4E00;&#x65E5;&#x6BD4;&#x4E00;&#x65E5;&#x5C11;&#x53BB;&#xFF0C;&#x8857;&#x9053;&#x4ECE;&#x5DDD;&#x6D41;&#x4E0D;&#x606F;&#x53D8;&#x5F97;&#x7A7A;&#x7A7A;&#x8361;&#x8361;&#x3002;&#x6211;&#x5FC3;&#x751F;&#x7591;&#x60D1;&#xFF0C;&#x8FD9;&#x5EA7;&#x7F8E;&#x4E3D;&#x7684;&#x57CE;&#x5E02;&#x7A76;&#x7ADF;&#x600E;&#x4E48;&#x4E86;&#xFF1F;&#x7A81;&#x7136;&#xFF0C;&#x6211;&#x88AB;&#x4E00;&#x9635;&#x98CE;&#x5439;&#x79BB;&#x4E86;&#x5988;&#x5988;&#x7684;&#x6000;&#x62B1;&#x3002;<br>
+&#x6211;&#x98DE;&#x5F97;&#x5F88;&#x4F4E;&#xFF0C;&#x98DE;&#x8FC7;&#x4E00;&#x5EA7;&#x83DC;&#x5E02;&#x573A;&#xFF0C;&#x8FD9;&#x91CC;&#x672C;&#x5E94;&#x4EBA;&#x58F0;&#x9F0E;&#x6CB8;&#xFF0C;&#x672C;&#x5E94;&#x5145;&#x6EE1;&#x7740;&#x4E2D;&#x56FD;&#x65B0;&#x5E74;&#x7684;&#x5FEB;&#x4E50;&#xFF0C;&#x4F46;&#x5374;&#x5BC2;&#x9759;&#x5F97;&#x53EF;&#x6015;&#xFF1B;&#x6211;&#x98DE;&#x8FC7;&#x706B;&#x8F66;&#x7AD9;&#xFF0C;&#x8FD9;&#x5EA7;&#x88AB;&#x8A89;&#x4E3A;&#x201C;&#x4E5D;&#x7701;&#x901A;&#x8862;&#x201D;&#x7684;&#x57CE;&#x5E02;&#xFF0C;&#x5374;&#x6CA1;&#x6709;&#x5F80;&#x5E74;&#x6625;&#x8FD0;&#x7684;&#x7E41;&#x5FD9;&#xFF0C;&#x706B;&#x8F66;&#x5168;&#x90E8;&#x4E00;&#x5217;&#x5217;&#x6574;&#x9F50;&#x5730;&#x505C;&#x653E;&#x5728;&#x7AD9;&#x53F0;&#x3002;<br>
+&#x5411;&#x524D;&#xFF0C;&#x518D;&#x5411;&#x524D;&#x98DE;&#xFF0C;&#x98DE;&#x8FC7;&#x4E00;&#x6240;&#x540D;&#x4E3A;&#x201C;&#x91D1;&#x94F6;&#x6F6D;&#x201D;&#x7684;&#x533B;&#x9662;&#xFF0C;&#x90A3;&#x91CC;&#x7684;&#x533B;&#x751F;&#x62A4;&#x58EB;&#x5168;&#x90FD;&#x6234;&#x7740;&#x53E3;&#x7F69;&#x3001;&#x7A7F;&#x7740;&#x539A;&#x91CD;&#x7684;&#x9632;&#x62A4;&#x670D;&#xFF0C;&#x5C3D;&#x5168;&#x529B;&#x6551;&#x6CBB;&#x7740;&#x611F;&#x67D3;&#x4E00;&#x79CD;&#x201C;&#x65B0;&#x578B;&#x80BA;&#x708E;&#x75C5;&#x6BD2;&#x201D;&#x7684;&#x60A3;&#x8005;&#xFF0C;&#x6211;&#x770B;&#x5230;&#x4ED6;&#x4EEC;&#x75B2;&#x60EB;&#x7684;&#x8EAB;&#x5F71;&#xFF0C;&#x4F46;&#x62A4;&#x76EE;&#x955C;&#x4E0B;&#x7684;&#x773C;&#x795E;&#x5374;&#x90A3;&#x4E48;&#x575A;&#x5B9A;&#x2026;&#x2026;<br>
+&#x98CE;&#x6E10;&#x6E10;&#x5927;&#x4E86;&#xFF0C;&#x628A;&#x6211;&#x5439;&#x5F97;&#x66F4;&#x9AD8;&#x3002;&#x98DE;&#x554A;&#x98DE;&#xFF0C;&#x98DE;&#x8FC7;&#x4E86;&#x4E00;&#x5217;&#x9AD8;&#x94C1;&#x3002;&#x9AD8;&#x94C1;&#x4E0A;&#x6709;&#x4E00;&#x4F4D;&#x8001;&#x4EBA;&#xFF0C;&#x5E74;&#x7EAA;&#x867D;&#x8FC7;&#x8004;&#x800B;&#x4E4B;&#x5E74;&#xFF0C;&#x4F46;&#x4ECD;&#x5728;&#x8F66;&#x4E0A;&#x52AA;&#x529B;&#x5DE5;&#x4F5C;&#xFF0C;&#x60F3;&#x7740;&#x4E3A;&#x56FD;&#x5BB6;&#x4EBA;&#x6C11;&#x6392;&#x5FE7;&#x89E3;&#x96BE;&#x3002;&#x4ED6;&#x4E0D;&#x5728;&#x5BB6;&#x4E2D;&#x9890;&#x517B;&#x5929;&#x5E74;&#xFF0C;&#x5374;&#x6BC5;&#x7136;&#x594B;&#x6218;&#x5728;&#x7B2C;&#x4E00;&#x7EBF;&#xFF1B;&#x4ED6;&#x4E0D;&#x987E;&#x4E2A;&#x4EBA;&#x5B89;&#x5371;&#xFF0C;&#x53EA;&#x4E00;&#x5FC3;&#x60F3;&#x7740;&#x5168;&#x56FD;&#x4EBA;&#x6C11;&#x7684;&#x5065;&#x5EB7;&#xFF1A;&#x6211;&#x4E0D;&#x7981;&#x5FC3;&#x75BC;&#x8D77;&#x4ED6;&#x6765;&#x3002;<br>
+&#x8D8A;&#x98DE;&#x8D8A;&#x9AD8;&#xFF0C;&#x6211;&#x770B;&#x5230;&#x706B;&#x795E;&#x5C71;&#x533B;&#x9662;&#x7684;&#x5DE5;&#x5730;&#x4ECD;&#x7136;&#x706F;&#x706B;&#x901A;&#x660E;&#xFF0C;&#x5DE5;&#x4EBA;&#x4EEC;&#x4E00;&#x4E2A;&#x4E2A;&#x4E89;&#x5206;&#x593A;&#x79D2;&#x3001;&#x62FC;&#x5C3D;&#x5168;&#x529B;&#xFF0C;&#x56E0;&#x4E3A;&#x53EA;&#x8981;&#x65E9;&#x4E00;&#x5206;&#x949F;&#x5B8C;&#x5DE5;&#xFF0C;&#x5C31;&#x80FD;&#x65E9;&#x4E00;&#x5206;&#x949F;&#x6551;&#x52A9;&#x4E00;&#x4E2A;&#x75C5;&#x4EBA;&#xFF01;&#x65BD;&#x5DE5;&#x7684;&#x573A;&#x666F;&#x88AB;&#x4F20;&#x4E0A;&#x4E92;&#x8054;&#x7F51;&#xFF0C;&#x706B;&#x795E;&#x5C71;&#x7684;&#x706F;&#x706B;&#x70B9;&#x4EAE;&#x4E86;&#x5343;&#x5BB6;&#x4E07;&#x6237;&#x7684;&#x5E0C;&#x671B;&#x3002;<br>
+&#x8D8A;&#x98DE;&#x8D8A;&#x9AD8;&#xFF0C;&#x98DE;&#x8FC7;&#x9EC4;&#x9E64;&#x697C;&#x7684;&#x7409;&#x7483;&#x6A90;&#x89D2;&#xFF0C;&#x6211;&#x770B;&#x5230;&#x4E00;&#x652F;&#x652F;&#x533B;&#x7597;&#x961F;&#x5954;&#x5411;&#x6B66;&#x6C49;&#xFF0C;&#x4E49;&#x65E0;&#x53CD;&#x987E;&#x3002;&#x4ED6;&#x4EEC;&#x6765;&#x81EA;&#x4E0D;&#x540C;&#x7701;&#x5E02;&#x7684;&#x4E0D;&#x540C;&#x533B;&#x9662;&#xFF0C;&#x4F46;&#x6B64;&#x523B;&#x4ED6;&#x4EEC;&#x5C31;&#x50CF;&#x4E03;&#x5341;&#x5E74;&#x524D;&#x8DE8;&#x8FC7;&#x9E2D;&#x7EFF;&#x6C5F;&#x7684;&#x5FD7;&#x613F;&#x519B;&#x6218;&#x58EB;&#x4E00;&#x6837;&#xFF0C;&#x4E07;&#x4F17;&#x4E00;&#x5FC3;&#xFF0C;&#x4E00;&#x8D77;&#x4E3A;&#x4FDD;&#x536B;&#x6B66;&#x6C49;&#x800C;&#x201C;&#x6218;&#x201D;&#xFF01;&#x6211;&#x770B;&#x89C1;&#x4E00;&#x4F4D;&#x767D;&#x8863;&#x5929;&#x4F7F;&#x5728;&#x9632;&#x62A4;&#x670D;&#x4E0A;&#x5199;&#x4E0B;&#x4E00;&#x884C;&#x5C0F;&#x5B57;&#xFF0C;&#x4E3A;&#x5373;&#x5C06;&#x9AD8;&#x8003;&#x7684;&#x5973;&#x513F;&#x52A0;&#x6CB9;&#xFF1B;&#x6211;&#x542C;&#x89C1;&#x5C0F;&#x63D0;&#x7434;&#x60A0;&#x626C;&#x7684;&#x65CB;&#x5F8B;&#xFF0C;&#x90A3;&#x662F;&#x4E00;&#x4F4D;&#x5EB7;&#x590D;&#x7684;&#x60A3;&#x8005;&#x9001;&#x7ED9;&#x9006;&#x884C;&#x8005;&#x7684;&#x6700;&#x7F8E;&#x65CB;&#x5F8B;&#xFF01;<br>
+&#x8D8A;&#x98DE;&#x8D8A;&#x9AD8;&#xFF0C;&#x8D8A;&#x98DE;&#x8D8A;&#x9AD8;&#xFF0C;&#x6211;&#x770B;&#x5230;&#x5168;&#x4E2D;&#x56FD;&#x7684;&#x4EBA;&#x6C11;&#x90FD;&#x5728;&#x4E3A;&#x6B66;&#x6C49;&#x7948;&#x798F;&#xFF0C;&#x76FC;&#x671B;&#x7740;&#x6B66;&#x6C49;&#x65E9;&#x65E9;&#x5EB7;&#x590D;&#x3002;&#x795E;&#x5DDE;&#x5DE8;&#x9F99;&#x4F17;&#x5FD7;&#x6210;&#x57CE;&#xFF0C;&#x653E;&#x51FA;&#x4E07;&#x9053;&#x91D1;&#x5149;&#xFF01;<br>
+&#x6211;&#x98DE;&#x8FC7;&#x73E0;&#x7A46;&#x6717;&#x739B;&#x5CF0;&#xFF0C;&#x770B;&#x5230;&#x4E16;&#x754C;&#x4E0A;&#x8BB8;&#x591A;&#x56FD;&#x5BB6;&#x4E0D;&#x540C;&#x80A4;&#x8272;&#x4E0D;&#x540C;&#x4FE1;&#x4EF0;&#x7684;&#x4EBA;&#x90FD;&#x5728;&#x4E3A;&#x4E2D;&#x56FD;&#x6253;&#x6C14;&#xFF0C;&#x4E3A;&#x6B66;&#x6C49;&#x52A9;&#x5A01;&#x3002;&#x6709;&#x4E00;&#x4E2A;&#x575A;&#x5B9A;&#x7684;&#x58F0;&#x97F3;&#x544A;&#x8BC9;&#x5168;&#x4E16;&#x754C;&#xFF1A;&#x643A;&#x624B;&#x6297;&#x75AB;&#xFF0C;&#x5171;&#x514B;&#x65F6;&#x8270;&#xFF01; &#x594F;&#x54CD;&#x4E86;&#x6784;&#x5EFA;&#x4EBA;&#x7C7B;&#x547D;&#x8FD0;&#x5171;&#x540C;&#x4F53;&#x7684;&#x65F6;&#x4EE3;&#x5F3A;&#x97F3;&#x3002;<br>
+&#x98CE;&#x6E10;&#x6E10;&#x5C0F;&#x4E86;&#xFF0C;&#x6211;&#x6162;&#x6162;&#x5411;&#x4E0B;&#x843D;&#x53BB;&#xFF0C;&#x611F;&#x53D7;&#x5230;&#x5BD2;&#x51AC;&#x6B63;&#x5728;&#x9000;&#x53BB;&#xFF0C;&#x4E1C;&#x98CE;&#x5439;&#x62C2;&#x7740;&#x5927;&#x5730;&#xFF0C;&#x6625;&#x5929;&#x5373;&#x5C06;&#x5230;&#x6765;&#x3002;&#x6211;&#x770B;&#x5230;&#x4EBA;&#x4EEC;&#x7684;&#x8138;&#x4E0A;&#x9732;&#x51FA;&#x4E86;&#x7B11;&#x5BB9;&#xFF0C;&#x90A3;&#x662F;&#x5BF9;&#x6625;&#x7684;&#x4F01;&#x76FC;&#xFF0C;&#x5BF9;&#x80DC;&#x5229;&#x7684;&#x4F01;&#x76FC;&#x3002;<br>
+&#x6211;&#x770B;&#x5230;&#x4E60;&#x8FD1;&#x5E73;&#x4E3B;&#x5E2D;&#x6765;&#x5230;&#x6B66;&#x6C49;&#xFF0C;&#x4F5C;&#x51FA;&#x91CD;&#x8981;&#x6307;&#x793A;&#xFF0C;&#x4F20;&#x9012;&#x6218;&#x201C;&#x75AB;&#x201D;&#x65B0;&#x4FE1;&#x53F7;&#xFF01;<br>
+&#x6625;&#x6696;&#x82B1;&#x5F00;&#xFF0C;&#x8FD9;&#x5EA7;&#x57CE;&#x5E02;&#x53C8;&#x6062;&#x590D;&#x4E86;&#x5F80;&#x65E5;&#x7684;&#x751F;&#x673A;&#x3002;&#x4EBA;&#x4EEC;&#x51FA;&#x6765;&#x4E86;&#xFF0C;&#x8F66;&#x6D41;&#x5BC6;&#x8D77;&#x6765;&#x4E86;&#x3002;&#x4E00;&#x5217;&#x5217;&#x706B;&#x8F66;&#x53C8;&#x4ECE;&#x201C;&#x4E5D;&#x7701;&#x901A;&#x8862;&#x201D;&#x4E4B;&#x5904;&#x91CD;&#x65B0;&#x51FA;&#x53D1;&#xFF0C;&#x5F00;&#x5F80;&#x795E;&#x5DDE;&#x5927;&#x5730;&#x7684;&#x5404;&#x4E2A;&#x89D2;&#x843D;&#xFF1B;&#x4E00;&#x5EA7;&#x5EA7;&#x65B9;&#x8231;&#x533B;&#x9662;&#x5173;&#x4E0A;&#x6C89;&#x91CD;&#x7684;&#x5927;&#x95E8;&#xFF0C;&#x80DC;&#x5229;&#x7684;&#x53F7;&#x89D2;&#x5DF2;&#x7ECF;&#x5439;&#x54CD;&#xFF01;<br>
+&#x6211;&#x6EE1;&#x5FC3;&#x559C;&#x60A6;&#xFF0C;&#x8F7B;&#x8F7B;&#x843D;&#x5728;&#x5730;&#x4E0A;&#x3002;&#x770B;&#x5230;&#x65E0;&#x6570;&#x6735;&#x6211;&#x7684;&#x540C;&#x4F34;&#x5728;&#x679D;&#x5934;&#x7EFD;&#x653E;&#xFF0C;&#x9AD8;&#x6D01;&#xFF0C;&#x52A8;&#x4EBA;&#x2026;&#x2026;</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
